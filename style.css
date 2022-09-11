@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --primary-color: #1f1f1f;
+    --dark-color: #1f1f1f;
+    --light-color: #fff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    
+  
+}
+
+/* navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+    height: 70px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .flex {
+    justify-content: space-evenly;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+   list-style-type: none;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   margin: 0 1.5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.navbar i:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+/* container */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    
+   
+}
+
+/* hero */ 
+
+.hero {
+    background-image: url(/city_2.jpg);
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+    
+}
+
+.hero .container {
+
+    text-align: center;
+    position: relative;
+    top: 10vh;
+
+}
+
+/* buttons */
+
+.btn {
+    background-color: var(--light-color);
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-dark {
+    background-color: var(--dark-color);
+}
+
+.text-light {
+    color: #fff;
+}
+
+.text-dark {
+    color: #1f1f1f;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.hero a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+/* about */
+
+.about {
+    margin: 10px 0;
+}
+
+.about, .contact-form {
+    color: #1f1f1f;
+}
+
+.about .btn {
+    background-color: var(--dark-color);
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.about a, .contact-form a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+.about h2, .contact-text h2{
+    font-size: 30px;
+}
+
+.about p {
+    font-size: 1rem;
+}
+
+.about h3 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.about .about-text {
+    padding: 10px;
+}
+
+.about img {
+    max-width: 500px;
+    margin-top: 35px;
+}
+
+/* card */
+.card {
+    background-color: #fff;
+    color: #1f1f1f;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.contact-form {
+    width: 400px;
+    height: 350px;
+}
+
+.form-control {
+    margin: 30px 0;
+    
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #b4b4b4;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;   
+}
+
+.contact-form input:focus {
+    outline: none;
+}
+
+.showcase-sub {
+    margin: 30px 0;
+}
+
+.contact-text {
+    padding: 10px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* background */
+
+.bg-dark {
+    background-color: var(--dark-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+/* footer */
+
+.footer {
+    padding: 4rem 0;
+}
+
+.social  i {
+    color: #fff;
+    margin: 10px;
+}
+.social  i:hover {
+    transform: scale(0.98);
+}
+
+.footer li {
+    list-style-type: none;
+    padding: px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer ul {
+    padding: 10px;
+}
+
+.footer .grid-3 {
+    align-items: center;
+}
+
+/* mobile devices */ 
+
+@media(max-width: 500px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+}
+
+/* Tablets and under */
+
+@media (max-width: 768px) {
+    .grid, 
+    .about .grid, 
+    .showcase-sub .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    
+
+    * {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    } 
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #1f1f1f;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 200;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+    
+
+    .container {
+        width: 100%;
+    }
+
+   
+
+    .hero {
+        height: auto;
+        
+    }
+
+    .about-text {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .about {
+        margin-bottom: 20px;
+    }
+
+    .contact-text {
+        text-align: center;
+    }
+
+    .showcase-sub .card {
+        margin: 0 auto;
+        overflow-y: hidden;
+    }
+
+    .showcase-sub .contact-form {
+        margin-bottom: 10px;
+        max-width: 350px;
+    }
+    .hero {
+        height: 100vh;
+    }
+
+    .job {
+        width: 80%;   
+        margin: 0 auto;   
+    }
+
+    .hero .container {
+
+        text-align: center;
+        position: relative;
+        top: 20vh;
+    
+    }
+
+    .footer .container {
+        margin-left: 10px;
+    }
+
+}
