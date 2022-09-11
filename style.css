@@ -79,7 +79,7 @@ body {
 /* hero */ 
 
 .hero {
-    background-image: url(/city_2.jpg);
+    background-image: url('/image/City_2.jpg');
     width: 100%;
     height: 50vh;
     background-size: cover;
@@ -194,6 +194,11 @@ body {
     padding: 20px;
     margin: 20px;
 
+}
+
+.hidden {
+    visibility: hidden;
+    height: 0;
 }
 
 .contact-form {
